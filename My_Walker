@@ -1,7 +1,7 @@
 /* Walker Nav Menu */
 class My_Walker extends Walker_Nav_Menu
 {
-	function start_el(&$output, $item, $depth, $args, $id) {
+	function start_el(&$output, $item, $depth, $args) {
 		global $wp_query;
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
